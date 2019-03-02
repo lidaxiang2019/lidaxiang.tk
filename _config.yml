@@ -20,42 +20,42 @@ text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : Your Site Title
+title   : 荒岛书生
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  程序员学习，风景游记，思考和文学作品。
 
 
 ## => Language and Timezone
 ##############################
-lang: # the language of your site, default as "en"
-timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+lang: zh # the language of your site, default as "en"
+timezone:  Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
 ## => Author and Social
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : Your Name
+  name      : 荒岛书生
   url       :
   avatar    : # path or url of avatar image (square)
-  bio       : I am an amazing person.
-  email     :
-  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
-  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  bio       : 我当无畏。
+  email     : cad314@126.com
+  facebook  : 0lidaxiang # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+  twitter   : 0lidaxiang # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  weibo     : 0lidaxiang # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
-  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
-  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
-  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  zhihu     : 0lidaxiang # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  douban    : lidaxiang0# "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  linkedin  : lidaxiang# "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : 0lidaxiang # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: lidaxiang2019/lidaxiang2019.github.io
 repository_tree: master
 
 
@@ -84,14 +84,14 @@ toc:
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
-mathjax: # false (default), true
-mathjax_autoNumber: # false (default), true
+mathjax: true # false (default), true
+mathjax_autoNumber: true # false (default), true
 
 ## Mermaid
-mermaid: # false (default), true
+mermaid: true # false (default), true
 
 ## Chart
-chart: # false (default), true
+chart: true # false (default), true
 
 
 ## => Paginate
@@ -127,21 +127,21 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
+    clientID    : 040816517a36f3f37c27 # GitHub Application Client ID
+    clientSecret: a5dfba8a052486fa8c705017fb59d1445d194904 # GitHub Application Client Secret
+    repository  : lidaxiang2019.github.io # GitHub repo
+    owner       : lidaxiang2019 # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+      lidaxiang2019 # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
   valine:
-    app_id      : # LeanCloud App id
-    app_key     : # LeanCloud App key
+    app_id      : yRvmN5UbVcjUc5yBebe774s4-gzGzoHsz # LeanCloud App id
+    app_key     : Lsiqw8I4TUFBErWnM9h7qENR # LeanCloud App key
     placeholder : # Prompt information
     visitor     : # false (default)
-    meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
+    meta        : mail # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
 
 
 ## => Pageview
@@ -151,9 +151,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
+    app_id    : yRvmN5UbVcjUc5yBebe774s4-gzGzoHsz # LeanCloud App id
+    app_key   : Lsiqw8I4TUFBErWnM9h7qENR # LeanCloud App key
+    app_class : myblog # LeanCloud App class
 
 
 ## => Search
@@ -173,8 +173,8 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
-    anonymize_ip: false # Anonymize IP tracking for Analytics
+    tracking_id UA-91050128-1 : # Google Analytics id for the site
+    anonymize_ip: true  # Anonymize IP tracking for Analytics
 
 
 ## => Build
