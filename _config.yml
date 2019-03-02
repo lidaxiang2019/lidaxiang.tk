@@ -18,7 +18,7 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://www.lidaxiang.tk/index/ # the base hostname & protocol for your site e.g. https://www.someone.com
+url     : https://www.lidaxiang.tk # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : 荒岛书生
 description: > # this means to ignore newlines until "Language & timezone"
@@ -36,7 +36,7 @@ timezone:  Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database
 author:
   type      : # "person" (default), "organization"
   name      : 荒岛书生
-  url       : https://www.lidaxiang.tk/index/
+  url       : https://www.lidaxiang.tk
   avatar    : # path or url of avatar image (square)
   bio       : 我当无畏。
   email     : cad314@126.com
