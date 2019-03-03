@@ -132,7 +132,8 @@ comments:
     repository  : lidaxiang2019.github.io # GitHub repo
     owner       : lidaxiang2019 # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      lidaxiang2019 # - your GitHub Id
+      - lidaxiang2019 
+      - 0lidaxiang # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
