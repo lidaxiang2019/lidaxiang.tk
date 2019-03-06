@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "我的台北之走回101"
 categories:
 - scenery

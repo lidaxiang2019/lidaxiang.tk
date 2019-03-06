@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "一根白发"
 categories:
 - literature

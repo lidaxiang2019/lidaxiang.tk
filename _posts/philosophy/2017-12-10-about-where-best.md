@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "哪里最好"
 categories:
 - philosophy

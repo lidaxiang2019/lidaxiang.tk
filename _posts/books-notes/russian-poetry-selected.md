@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "俄罗斯诗选（台湾翻译）"
 categories:
 - book-notes

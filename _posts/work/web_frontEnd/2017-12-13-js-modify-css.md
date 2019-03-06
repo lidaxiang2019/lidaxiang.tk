@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "JS 改 Css 和 Style"
 rootCate: "work"
 categories:

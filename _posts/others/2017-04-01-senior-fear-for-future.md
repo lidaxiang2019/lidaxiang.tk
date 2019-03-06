@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "毕业生的以后"
 categories:
 - others

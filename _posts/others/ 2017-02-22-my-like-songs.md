@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "我觉得好听的歌曲"
 categories:
 - others

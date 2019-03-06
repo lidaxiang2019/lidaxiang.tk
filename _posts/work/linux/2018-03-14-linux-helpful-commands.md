@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Linux helpful commands"
 rootCate: "work"
 categories:

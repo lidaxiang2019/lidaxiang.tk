@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Some My Understandings for Bitcoin And  Blockchain"
 categories:
 - book-notes

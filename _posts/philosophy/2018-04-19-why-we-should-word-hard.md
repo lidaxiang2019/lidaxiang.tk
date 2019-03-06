@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "我们为什么还要努力的活着"
 categories:
 - literature

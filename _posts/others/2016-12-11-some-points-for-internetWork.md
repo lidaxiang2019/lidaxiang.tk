@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "对个人要不要进入互联网行业的一些看法"
 categories:
 - others

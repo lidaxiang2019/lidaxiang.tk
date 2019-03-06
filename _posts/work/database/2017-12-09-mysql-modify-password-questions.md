@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Quesions about MySQL/Mariadb modify password"
 rootCate: "work"
 categories:

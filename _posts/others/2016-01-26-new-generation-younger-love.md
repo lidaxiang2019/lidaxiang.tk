@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "我知道的青年们的恋爱"
 categories:
 - others

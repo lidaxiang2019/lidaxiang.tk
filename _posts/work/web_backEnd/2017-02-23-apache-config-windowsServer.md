@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Apache config in WindowsServer"
 rootCate: "work"
 categories:

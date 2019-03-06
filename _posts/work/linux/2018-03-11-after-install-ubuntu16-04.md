@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "After Install Ubuntu 16-04"
 rootCate: "work"
 categories:

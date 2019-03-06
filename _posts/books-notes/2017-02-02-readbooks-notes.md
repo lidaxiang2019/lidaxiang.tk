@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "2016年读电子书感想"
 categories:
 - book-notes

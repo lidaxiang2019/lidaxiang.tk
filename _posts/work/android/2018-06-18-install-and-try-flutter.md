@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Flutter 在 Ubuntu 18 下的安装和学习"
 categories:
 - android

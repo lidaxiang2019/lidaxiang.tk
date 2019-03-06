@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "找工作这件事儿"
 rootCate: "work"
 categories:

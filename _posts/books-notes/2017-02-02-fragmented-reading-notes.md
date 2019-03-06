@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "2016~2017年碎片化阅读摘录"
 categories:
 - book-notes

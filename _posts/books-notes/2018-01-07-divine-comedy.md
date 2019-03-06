@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "神曲 The Divine Comedy (Italian: Divina Commedia)"
 categories:
 - book-notes

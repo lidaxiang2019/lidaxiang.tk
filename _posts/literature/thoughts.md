@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "漫游随想"
 categories:
 - literature

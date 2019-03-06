@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Some userful library of Django"
 rootCate: "work"
 categories:

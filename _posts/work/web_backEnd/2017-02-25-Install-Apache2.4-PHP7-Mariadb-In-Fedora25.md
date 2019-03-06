@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "在Fedora25上安装Apache2.4 & PHP7 &Mariadb"
 rootCate: "work"
 categories:

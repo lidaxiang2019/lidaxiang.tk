@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Introduction of Git commands"
 rootCate: "work"
 categories:

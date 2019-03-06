@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Nginx uwsgi config for Django"
 rootCate: "work"
 categories:

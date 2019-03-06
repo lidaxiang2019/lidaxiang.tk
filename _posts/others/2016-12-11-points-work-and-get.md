@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "对努力是不是会收获的一点感触"
 categories:
 - others

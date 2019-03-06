@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "异类：不一样的成功启示录"
 categories:
 - book-notes

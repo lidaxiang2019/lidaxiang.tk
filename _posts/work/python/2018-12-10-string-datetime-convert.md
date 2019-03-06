@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Python string-datetime-convertion"
 rootCate: "work"
 show_edit_on_github: false

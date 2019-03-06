@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Import History From 1 To 1000"
 categories:
 - book-notes

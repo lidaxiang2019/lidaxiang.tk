@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "台科印象"
 categories:
 - literature

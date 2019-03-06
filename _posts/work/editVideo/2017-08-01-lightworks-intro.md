@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Lightworks Introduction"
 rootCate: "work"
 categories:

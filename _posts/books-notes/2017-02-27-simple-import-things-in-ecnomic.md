@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Those Simple But Import things in Ecnomic that I think(Updating)"
 categories:
 - book-notes

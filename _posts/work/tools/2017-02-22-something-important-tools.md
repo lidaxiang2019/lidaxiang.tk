@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "常用 Tools 记录"
 rootCate: "work"
 categories:

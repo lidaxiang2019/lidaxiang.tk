@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: article
 title:  "High-Performance Architecture"
 rootCate: "work"
 show_edit_on_github: false
 pageview: true
 comment: true
-key: work_web_backEnd_20181010
+key: wrok_web_backEnd_20181010
 categories:
 - Web_BackEnd
 tags:

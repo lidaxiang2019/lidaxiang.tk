@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "维基经济学"
 categories:
 - book-notes

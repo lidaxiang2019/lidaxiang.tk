@@ -62,8 +62,8 @@ repository_tree: master
 ## => Paths
 ##############################
 paths:
-  root    : /index.html # title link url, "/" (default)
-  home    : /index.html # home layout url, "/" (default)
+  root    : / # title link url, "/" (default)
+  home    : / # home layout url, "/" (default)
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
@@ -96,7 +96,7 @@ chart: true # false (default), true
 
 ## => Paginate
 ##############################
-paginate: 8
+paginate: 10
 paginate_path: /page:num # don't change this unless for special need
 
 
@@ -219,6 +219,7 @@ defaults:
 
 ## => Plugins
 ##############################
+# gems: [jekyll-paginate] 
 plugins:
   - jekyll-feed
   - jekyll-paginate

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "在台北生活小小建议"
 categories:
 - scenery

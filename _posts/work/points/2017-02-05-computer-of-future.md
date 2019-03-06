@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "对未来计算机行业的一点看法(2017~2050)"
 rootCate: "work"
 categories:

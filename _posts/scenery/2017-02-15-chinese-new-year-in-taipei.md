@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "从年夜饭到平溪天灯"
 categories:
 - scenery

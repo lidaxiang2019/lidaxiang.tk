@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Java Spring MVC"
 rootCate: "work"
 categories:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Import History From 1001 To 1499"
 categories:
 - book-notes

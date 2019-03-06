@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Import Technoligy In Develop"
 rootCate: "work"
 categories:

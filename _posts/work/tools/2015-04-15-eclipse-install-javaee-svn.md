@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Use Eclipse Introduction"
 rootCate: "work"
 categories:

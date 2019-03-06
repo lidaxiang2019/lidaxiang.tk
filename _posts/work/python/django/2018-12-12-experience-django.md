@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: article
 title:  "Django experience"
-rootCate: "work"
+data_source: site.posts.work
 categories:
 - Python
 tags:

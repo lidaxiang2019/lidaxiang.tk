@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "(转)挽救學生智商，請停用 PowerPoint"
 categories:
 - philosophy

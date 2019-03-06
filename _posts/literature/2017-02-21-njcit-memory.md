@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "南信院回忆 - 表白向日葵"
 categories:
 - literature

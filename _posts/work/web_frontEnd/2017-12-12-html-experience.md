@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "HTML Experience"
 rootCate: "work"
 categories:

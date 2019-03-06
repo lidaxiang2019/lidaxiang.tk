@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "(转)北大学子：你们为什么活得这么无趣？！"
 categories:
 - philosophy

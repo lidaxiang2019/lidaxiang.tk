@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Java 泛型"
 rootCate: "work"
 categories:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Android 学习和错误"
 categories:
 - android

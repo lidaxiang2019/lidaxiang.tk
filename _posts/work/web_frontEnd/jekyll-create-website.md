@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "jekyll 建立个人静态网站"
 categories:
 - jekyll

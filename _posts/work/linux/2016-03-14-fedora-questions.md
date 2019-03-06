@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Fedora remove nouse kernel version"
 rootCate: "work"
 categories:

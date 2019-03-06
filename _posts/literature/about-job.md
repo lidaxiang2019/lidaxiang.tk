@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "关于职业选择"
 categories:
 - literature

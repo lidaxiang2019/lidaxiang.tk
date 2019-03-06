@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "台科讲座心得体会"
 categories:
 - experience

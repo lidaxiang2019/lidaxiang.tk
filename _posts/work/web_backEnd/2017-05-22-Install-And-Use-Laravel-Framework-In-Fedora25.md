@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "在Fedora25中安装和使用Laravel 框架"
 rootCate: "work"
 categories:

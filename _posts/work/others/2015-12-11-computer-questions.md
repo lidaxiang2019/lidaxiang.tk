@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "计算机日常使用问题"
 rootCate: "work"
 categories:

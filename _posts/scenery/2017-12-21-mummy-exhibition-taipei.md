@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "台北大英博物馆木乃伊展览"
 categories:
 - scenery

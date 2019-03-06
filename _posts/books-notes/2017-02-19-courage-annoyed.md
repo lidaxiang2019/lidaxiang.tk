@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "被讨厌的勇气读书笔记"
 categories:
 - book-notes

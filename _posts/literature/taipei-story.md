@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "水墨台北故事"
 categories:
 - literature

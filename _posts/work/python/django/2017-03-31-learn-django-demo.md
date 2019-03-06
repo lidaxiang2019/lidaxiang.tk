@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Learn Django by Demo"
 rootCate: "work"
 categories:

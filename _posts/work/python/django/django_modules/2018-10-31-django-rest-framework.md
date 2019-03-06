@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Django REST framework"
 rootCate: "work"
 categories:

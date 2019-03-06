@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "山河之书读书笔记"
 categories:
 - book-notes

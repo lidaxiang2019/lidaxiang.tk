@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Python and Python3 experience"
 rootCate: "work"
 categories:

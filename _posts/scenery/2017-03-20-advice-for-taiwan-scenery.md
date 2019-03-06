@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "台湾旅行推荐"
 categories:
 - scenery

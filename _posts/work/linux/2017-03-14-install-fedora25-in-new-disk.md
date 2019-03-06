@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Install Fedora25 in New Disk"
 rootCate: "work"
 categories:

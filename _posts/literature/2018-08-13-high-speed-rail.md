@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "异城同地(更新中)"
 categories:
 - literature

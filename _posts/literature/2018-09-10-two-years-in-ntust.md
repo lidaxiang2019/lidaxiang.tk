@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "我在台科这两年"
 categories:
 - literature

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "我的阅读清单"
 categories:
 - goals

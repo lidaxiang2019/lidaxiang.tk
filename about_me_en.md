@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "About Me"
 permalink: /about_me_en/
 ---
