@@ -111,6 +111,14 @@ list(d.items())
 ```
 而且好处是当查找d[key]里的key不存在时，并不会报错而是可能返回默认值，比如里面的key是list类型则会返回[]。
 
+
+## string
+1. python3 format print string
+```
+str = "单价: {0:3d}  金额{1:4d}  名字：{2:5s}"
+ print(str.format(6, 12 "苹果"))
+```
+
 ## 参考
 [Python 3 collections.defaultdict() 与 dict的使用和区别](https://blog.csdn.net/kyi_zhu123/article/details/80203118)
 
@@ -119,3 +127,5 @@ list(d.items())
 [python通过某个字段将记录分组](https://blog.csdn.net/zhousishuo/article/details/78391238)
 
 [Python语法糖——遍历列表时删除元素](https://segmentfault.com/a/1190000007214571)
+
+[How To Use String Formatters in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3)

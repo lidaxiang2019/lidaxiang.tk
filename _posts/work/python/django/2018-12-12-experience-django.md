@@ -48,7 +48,7 @@ Django 的优势还有 Web 界面调试， 丰富的第三方库和文档，强�
 10. get_or_create(),之前文章中也提到过,有就获取过来，没有就创建，用它可以避免重复，但是速度可以会慢些，因为要先尝试获取。 返回数据是一个tuple两个值：(size, created)
 11. 排序: `filter(XXX).order_by('-pub_date','headline')`
 12. 总共5位，其中有两位小数，DecimalField: `DecimalField(max_digits = 5,decimal_places = 2)`
-
+13. django index_together 联合索引，能确保某几个字段的组合在 Database 里是唯一的
 
 ## 二、Django ORM 聚合和分页
 
