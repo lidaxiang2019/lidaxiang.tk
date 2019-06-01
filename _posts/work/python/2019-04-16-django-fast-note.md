@@ -53,6 +53,14 @@ Tom = Person.objects.get(id=1)
    通过建立合适的索引来提高性能。记住，索引会降低写的性能。
   django-debug-tool 是一个功能非常强大的 debug 插件，它可以展现项目中每次查询所执行的 SQL 语句的执行时间。
 18. [Write and Run test](https://docs.djangoproject.com/en/2.2/topics/testing/overview/)  [更简单版本解释test](https://code.ziqiangxuetang.com/django/django-test.html)
+19. [django-celery-beat 动态建立celery job](http://www.lidaxiang.tk/python/2019/05/16/django-celery-beat.html) 
+20. datetime.now() 获取是utc时间，存进去数据库也是utc，当serializer之后才会变成本地时间。timezone.now()会直接按照设定的timezone来获取对应的时间。
+21. 执行 `./manage.py check --deploy` 命令来查看可能存在的安全问题：
+22. DRF通常使用BrowsableAPIRenderer, 部署到生产环境后，最好将这个Renderer移除
+23. django 有 sigal 机制，可以在 create、save 和 delete ORM 操作时，触发事件函数。另外也可以自己新建signal。update 操作没有内置signal。
+24. [DRF 搜索、筛选、排序、分页权限功能](https://q1mi.github.io/Django-REST-framework-documentation/api-guide/filtering_zh/#djangoobjectpermissionsfiltedjango)DRF 框架可以设置 `filter_backends` `serializer_class` `SearchFilter` `OrderingFilter` `Pagination`
+25. [DRF 限流量Throttling、主机名信息携带、Authentication、版本号支持](https://blog.csdn.net/m0_43394876/article/details/88857732) 需要获取请求的版本号时，可以通过request.version来获取。
+26. 当想要找的内容清晰具体，用户一般通过键入 **关键词（数据输入）的方式搜索**。而当用户游离在模糊的区间时，通常使用到**筛选功能来聚焦**。
 
 
 ## Python
@@ -66,6 +74,19 @@ Tom = Person.objects.get(id=1)
 8. 命名切片: SHARES = slice(20, 23); PRICE = slice(31, 37); cost = int(record[SHARES]) * float(record[PRICE])
 9. [每周一个 Python 模块 | heapq](https://juejin.im/post/5c0f9c1fe51d451ac27c470a)
 10. 统计list里出现频率最高的 ： from collections import Counter;word_counts = Counter(words);top_three = word_counts.most_common(3)
+11. [Python dict pop method](https://lightless.me/archives/python-dict-pop-method.html) `res = dict.pop('logged_in', None)`  指定了第二个参数 None 之后，即便尝试 pop 一个不存在的键，也不会有异常
+12. `PRICE = slice(31, 37)` 命名list的切片，避免无直观意义的硬编码
+13. `from collections import Counter ; word_counts = Counter(words);top_three = word_counts.most_common(3)` #出现频率最高的3个单词
+14. 确保线程安全的办法: 锁和信号
+15. 线程间传递数据，常用 Queue 。
+16. Python3 尽量使用 pickle 序列化，而不是用json。
+17. [repr 可以重新拿到对象， str 区别](https://www.cnblogs.com/shaosks/p/5737089.html)内建函数str()和repr() 或反引号操作符（``）可以方便地以字符串的方式获取对象的内容、类型、数值属性等信息。repr()函数得到的字符串通常可以用来重新获得该对象。
+18. [Python format 格式化函数](https://www.runoob.com/python/att-string-format.html) 字段后的 : 后面加一个整数会限定该字段的最小宽度，这在美化表格时很有用: ` print('{0:10} ==> {1:10d}'.format(name, phone))`
+19. [使用 heapq 实现一个优先级队列](https://blog.csdn.net/andybegin/article/details/81027511)
+20. [[Python标准库]heapq——堆排序算法](https://blog.csdn.net/dapeng0802/article/details/50389857)
+21. [基于线程通信的程序，想让它们实现发布/订阅模式的消息通信。](https://python3-cookbook.readthedocs.io/zh_CN/latest/c12/p11_implement_publish_subscribe_messaging.html) 一个交换机就是一个普通对象，负责维护一个活跃的订阅者集合，并为绑定、解绑和发送消息提供相应的方法。
+22. [self._” to variable declarations within class methods](https://stackoverflow.com/questions/30294383/python3-when-exactly-do-you-need-to-prepend-self-to-variable-declarations)class某个方法里如果有 `self._length_of_thing`，则表示这是个class 变量，可以被class其他方法访问。
+
 
 ## 其他开发相关
 1. [Elastic APM - kibana](https://segmentfault.com/a/1190000014864630)  Opbeat被Elastic收购了，做成了Elastic APM。功能包括监控性能表现(每个路由、每次请求)，以及类似sentry的错误收集功能.，架构上Elastic APM和ES、Kibana还是相对独立的，集成也不难。
@@ -83,7 +104,8 @@ REST：所谓的 Representational state transfer (面向资源)
 ## 设计思路
 1. [Django多级评论（上）](https://zhuanlan.zhihu.com/p/35354495)
 2. [Richardson成熟度模型(Richardson Maturity Model) - 通往真正REST的步骤](https://blog.csdn.net/dm_vincent/article/details/51341037) [英文地址](https://martinfowler.com/articles/richardsonMaturityModel.html)简而言之就是切分资源访问，引入http动词，以及每次请求带上下次访问的地址。
-
+3. [Python RPC 远程方法调用](https://python3-cookbook.readthedocs.io/zh_CN/latest/c11/p08_implementing_remote_procedure_calls.html) RPCHandler 和 RPCProxy 的基本思路是很比较简单的。 如果一个客户端想要调用一个远程函数，比如 foo(1, 2, z=3) ,代理类创建一个包含了函数名和参数的元组 ('foo', (1, 2), {'z': 3}) 。 这个元组被pickle序列化后通过网络连接发生出去。 这一步在 RPCProxy 的 __getattr__() 方法返回的 do_rpc() 闭包中完成。 服务器接收后通过pickle反序列化消息，查找函数名看看是否已经注册过，然后执行相应的函数。 执行结果(或异常)被pickle序列化后返回发送给客户端。我们的实例需要依赖 multiprocessing 进行通信。
+4. RPC 调用安全问题，因为黑客可以创建特定的消息，能够让任意函数通过pickle反序列化后被执行，所以永远不要允许来自不信任或未认证的客户端的RPC。特别是你绝对不要允许来自Internet的任意机器的访问， 这种只能在内部被使用，位于防火墙后面并且不要对外暴露。
 
 ## 其他思想
 1. [正态分布](http://www.ruanyifeng.com/blog/2017/08/normal-distribution.html) 
@@ -115,5 +137,7 @@ PMI 与股市有着高度相关性，而且PMI一般具有先导性。
 PMI及PPI是先行指标，CPI是滞后指标，前两者对后者会有一定的传导性    PMI在50%以上的扩张区间，并处于上升通道时，经济有逐渐过热的趋势，传导至CPI，表现为通胀压力。PPI向CPI的传导则在于，中间品价格的上涨会导致终端商品价格的上涨。不过需要注意的是，在中国，CPI的构成中，最大头的是农产品价格，而非工业品价格，而PPI所影响的更多是工业产成品的价格，在这种结构性差异下，PPI对CPI的传导性并不强，甚至于，中国PPI的影响可能通过出口传导至美国。
  
  PMI对CPI的影响则主要由于PMI本身是对某个领域的经济或者整个经济荣衰的衡量指数，一般以50为界，低则衰，高则荣。一般而言，当经济趋向繁荣即超越50时，表明经济走势良好，如果大幅度超过50表明经济过热，供不应求，CPI则很可能随之升高；相反，如果大幅低于50则表明有通货紧缩的危险，CPI自然降低甚至为负数。
+
+ 6. [解构《伟大的领袖如何激励行动》](https://www.jianshu.com/p/8a76fe41049f) 黄金思维圈对应的三个层面——信念 why 、行动 how、现象what。人们买的不是你的产品，而是你的信念。例子: 苹果公司在进行营销时，沟通方式如下" 我们做的每一件事情，都是为了突破和创新，在这个过程里做出了Mac。天使用户”，他们对产品的接受度和传播都起着重要的影响。在决定是否购买的时候，市场中的顾客需要相互参考。
 
 
