@@ -3,11 +3,11 @@ layout: article
 title:  "Django Growth Route 2019"
 data_source: site.posts.work
 categories:
-- Python
+- Plan
 tags:
 - work
-- Python3
-- Django
+- learn
+- target
 ---
 
 Make a growth-route for learn and use Django,Python。
