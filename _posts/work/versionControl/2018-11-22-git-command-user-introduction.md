@@ -133,6 +133,10 @@ pick 7b16b28 update1
 ## Git Status
 `git status` 查看目前代码的状态，哪些是冲突的，哪些已经被加入了index进入版本控制，哪些还在 workspace。
 
+`git show XXXXX --name-only` 只查看哪些文件被修改，只列出文件名
+
+`git show XXXXX  --name-status` 查看被改变的文件状态
+
 ## Git Reset 本地回滚
 
 ```

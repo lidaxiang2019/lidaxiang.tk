@@ -61,6 +61,13 @@ Tom = Person.objects.get(id=1)
 24. [DRF 搜索、筛选、排序、分页权限功能](https://q1mi.github.io/Django-REST-framework-documentation/api-guide/filtering_zh/#djangoobjectpermissionsfiltedjango)DRF 框架可以设置 `filter_backends` `serializer_class` `SearchFilter` `OrderingFilter` `Pagination`
 25. [DRF 限流量Throttling、主机名信息携带、Authentication、版本号支持](https://blog.csdn.net/m0_43394876/article/details/88857732) 需要获取请求的版本号时，可以通过request.version来获取。
 26. 当想要找的内容清晰具体，用户一般通过键入 **关键词（数据输入）的方式搜索**。而当用户游离在模糊的区间时，通常使用到**筛选功能来聚焦**。
+27. [Django safedelete 防止被外键引用的数据被删](https://django-safedelete.readthedocs.io/en/latest/)
+28. [ManyToManyField 多对多关系](https://blog.csdn.net/bbwangj/article/details/79935375) `members = models.ManyToManyField(Person, through='Membership', through_fields=('group', 'person'))`
+29. [Django-haystack来实现搜索功能](https://blog.csdn.net/AC_hell/article/details/52875927) haystack是django的开源搜索框架，该框架支持Solr,Elasticsearch,Whoosh, *Xapian*搜索引擎，不用更改代码，直接切换引擎，减少代码量。
+30. [django 使用 select_related 提高数据查询的思路](https://www.jianshu.com/p/be0392af0b64)，[Django 索引加快数据查询](https://www.jianshu.com/p/e6c7e244c980) 设置索引方式:1. `db_index=True` 2. `unique_together` 3. `index_together`
+31. [mysql 索引使用原则](https://cloud.tencent.com/developer/article/1004912) mysql中普遍使用B+Tree做索引。原则： **1. 最左前缀匹配原则,，where子句中使用最频繁的一列放在最左边。 2.尽量选择区分度高的列作为索引 3. =和in可以乱序 4.索引列不能参与计算，保持列“干净” 5.尽量的扩展索引，不要新建索引** 
+32. [索引的坏处和额外时间、空间开销、数据变更还需要重新计算和维护](https://cloud.tencent.com/developer/article/1004912) 索引可以提高查询效率，但索引也有自己的不足之处。索引的额外开销：(1) 空间：索引需要占用空间;(2) 时间：查询索引需要时间；(3) 维护：索引须要维护（数据变更时）；
+33. [不建议使用索引的情况：(1) 数据量很小的表 (2) 空间紧张](https://cloud.tencent.com/developer/article/1004912)
 
 
 ## Python
