@@ -244,45 +244,8 @@ git apply patch //将patch文件内容差分到本地
 git apply --check patch
 ```
 
-## 多个 SSH-Key 如何使用
-git可以新建多个ssh-key，有的可以专门用于自己的github，有的可以用于公司提交代码。
-
-第一步是使用`ssh-keygen -t rsa -c 'YOUR_WANT_NAME'`创建自己想要命名的一对key文件，
-第二步是创建名为`config`的文件，里面内容类似下方代码这样:
-
-```
-Host github.com
-HostName github.com
-User git
-IdentityFile ~/.ssh/github
-
-Host code.aliyun.com
-HostName code.aliyun.com
-User git
-IdentityFile ~/.ssh/COMPANY
-```
-第三步是把.pub结尾的公钥文件里的全部内容，粘贴到对应的远端仓库服务里，比如GitHub的setting里可以加入ssh-key，   
-第四步是提交或pull测试。
-
 ## Git Remote 建立多个远端
 `git remote add XXX` 增加远端头,可以一次推到多个远端
-
-## 常出现的问题记录
-(1)`warning : permanently added the RSA host key for IP address '192.30.252.130' to the list of known list`  ：
-这个大概说的是, git自己把公钥自动加到~/.git/known_host文件里面了, 进去查一下,确实是这样的.总之能上传成功就是好的.
-
-(2)提交之后遇到类似Permission denied (publickey).大意说你不具有读和写的权限：
-
-```
-解决办法1
-git remote rm origin
-git remote add origin git@github.com:LyleLee/practice.git
-解决办法2
-git push origin master
-```
-
-(3) `remote: GitLab: You are not allowed to push code to protected branches on this project.`    
-解决办法是请管理员开通对应branch的提交权限。
 
 ## 参考文献
 [Git 分支 - 分支的新建与合并](https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)

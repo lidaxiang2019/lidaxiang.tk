@@ -64,11 +64,23 @@ Tom = Person.objects.get(id=1)
 27. [Django safedelete 防止被外键引用的数据被删](https://django-safedelete.readthedocs.io/en/latest/)
 28. [ManyToManyField 多对多关系](https://blog.csdn.net/bbwangj/article/details/79935375) `members = models.ManyToManyField(Person, through='Membership', through_fields=('group', 'person'))`
 29. [Django-haystack来实现搜索功能](https://blog.csdn.net/AC_hell/article/details/52875927) haystack是django的开源搜索框架，该框架支持Solr,Elasticsearch,Whoosh, *Xapian*搜索引擎，不用更改代码，直接切换引擎，减少代码量。
-30. [django 使用 select_related 提高数据查询的思路](https://www.jianshu.com/p/be0392af0b64)，[Django 索引加快数据查询](https://www.jianshu.com/p/e6c7e244c980) 设置索引方式:1. `db_index=True` 2. `unique_together` 3. `index_together`
+30. **非常重要:** [django 使用 select_related 改lazy查询为一次性查出结果，由此提高查询效率避免多次query的思路](https://www.jianshu.com/p/be0392af0b64)，[Django 索引加快数据查询](https://www.jianshu.com/p/e6c7e244c980) select_related 执行了一个 sql join 查询。prefetch_related 执行一个单独的查找，它允许预先读取多对多和多对一的对象数据，这是 select_related 做不到的。另外 perfetch_related 也可以与通用外键和关系一起使用。设置索引方式:1. `db_index=True` 2. `unique_together` 3. `index_together`
 31. [mysql 索引使用原则](https://cloud.tencent.com/developer/article/1004912) mysql中普遍使用B+Tree做索引。原则： **1. 最左前缀匹配原则,，where子句中使用最频繁的一列放在最左边。 2.尽量选择区分度高的列作为索引 3. =和in可以乱序 4.索引列不能参与计算，保持列“干净” 5.尽量的扩展索引，不要新建索引** 
 32. [索引的坏处和额外时间、空间开销、数据变更还需要重新计算和维护](https://cloud.tencent.com/developer/article/1004912) 索引可以提高查询效率，但索引也有自己的不足之处。索引的额外开销：(1) 空间：索引需要占用空间;(2) 时间：查询索引需要时间；(3) 维护：索引须要维护（数据变更时）；
 33. [不建议使用索引的情况：(1) 数据量很小的表 (2) 空间紧张](https://cloud.tencent.com/developer/article/1004912)
+34. `[dict(q) for q in qs]` 把 **queryset** 转换成list
+35. [sort list of dictionaries by values in Python](https://www.geeksforgeeks.org/ways-sort-list-dictionaries-values-python-using-lambda-function/) `print sorted(lis, key = lambda i: i['age'],reverse=True) ` 
+36. [简单聚合 aggregate不单单可以求和，还可以求平均Avg，最大最小等等。](https://blog.csdn.net/AyoCross/article/details/68951413)`pubs = Publisher.objects.aggregate(num_books=Count('book'))`
+37. [annotate 查询各个 消息状态(未发送、已发送等等) 的消息数量](https://blog.csdn.net/AyoCross/article/details/68951413) ` msgS = MessageTab.objects.values_list('msg_status').annotate(Count('id'))`
+38. [select for update 不小心锁了全表带来的性能问题](http://ju.outofmemory.cn/entry/178798)
+39. `model._meta.get_fields()` 获取一个model所有字段名字。
+40. `exclude`
+41. `icotains`
 
+## Django & DRF library
+1. [drf-problems Handles exception to return response with Problem Details model](https://pypi.org/project/drf-problems/)  这个库可以使得drf返回的错误信息非常详细，包括url、type、参数、错误原因。
+2. [drf-dynamic-fields](https://pypi.org/project/drf-dynamic-fields/) Dynamically return subset of Django REST Framework serializer fields
+  
 
 ## Python
 1. defaultdict
@@ -98,13 +110,11 @@ Tom = Person.objects.get(id=1)
 1. [Elastic APM - kibana](https://segmentfault.com/a/1190000014864630)  Opbeat被Elastic收购了，做成了Elastic APM。功能包括监控性能表现(每个路由、每次请求)，以及类似sentry的错误收集功能.，架构上Elastic APM和ES、Kibana还是相对独立的，集成也不难。
 
 补充：[ELK日志系统：Elasticsearch + Logstash + Kibana 搭建教程](https://www.cnblogs.com/yjmyzz/p/ELK-install-tutorial.html)
-
 2. [Zendesk 工单系统](https://developer.zendesk.com/rest_api/docs/support/introduction)
-
-3. [api接口、RPC、WebService分别解决什么问题？](https://segmentfault.com/q/1010000000484829)
-RPC：所谓的远程过程调用 (面向方法)
-SOA：所谓的面向服务的架构(面向消息)
-REST：所谓的 Representational state transfer (面向资源)
+3. [api接口、RPC、WebService分别解决什么问题？](https://segmentfault.com/q/1010000000484829) RPC：所谓的远程过程调用 (面向方法) SOA：所谓的面向服务的架构(面向消息) REST：所谓的 Representational state transfer (面向资源)
+4. http是无状态协议，ftp是有状态。所以http需要cookie、session来维持状态和认证。
+5. 哈希洪水攻击（Hash-Flooding Attack）是一种拒绝服务攻击（Denial of Service），一旦后端接口存在合适的攻击面（找到你的哈希生成算法），攻击者就能轻松让整台服务器陷入瘫痪。比如哈希表（Hash Table）。假设我们想要连续插入 n 个元素到哈希表中：如果这些元素的键（Key）极少出现相同哈希值，这项任务就只需 O(n) 的时间。如果这些键频繁出现相同的哈希值（频繁发生碰撞），这项任务就需要 O(n^2) 的时间。防御措施：如果黑客不能掌握算法的所有细节，是不是就不能算出一组频繁碰撞的键，也就没法发动哈希洪水攻击。每建一张哈希表，我们就随机生成一个新的秘密参数。SipHash官网，里面列举了众多采用SipHash-2-4算法的知名项目。其中Rust、Python、Ruby等语言更是把SipHash-2-4作为默认的哈希表实现方法。
+6. 
 
 
 ## 设计思路
@@ -112,6 +122,8 @@ REST：所谓的 Representational state transfer (面向资源)
 2. [Richardson成熟度模型(Richardson Maturity Model) - 通往真正REST的步骤](https://blog.csdn.net/dm_vincent/article/details/51341037) [英文地址](https://martinfowler.com/articles/richardsonMaturityModel.html)简而言之就是切分资源访问，引入http动词，以及每次请求带上下次访问的地址。
 3. [Python RPC 远程方法调用](https://python3-cookbook.readthedocs.io/zh_CN/latest/c11/p08_implementing_remote_procedure_calls.html) RPCHandler 和 RPCProxy 的基本思路是很比较简单的。 如果一个客户端想要调用一个远程函数，比如 foo(1, 2, z=3) ,代理类创建一个包含了函数名和参数的元组 ('foo', (1, 2), {'z': 3}) 。 这个元组被pickle序列化后通过网络连接发生出去。 这一步在 RPCProxy 的 __getattr__() 方法返回的 do_rpc() 闭包中完成。 服务器接收后通过pickle反序列化消息，查找函数名看看是否已经注册过，然后执行相应的函数。 执行结果(或异常)被pickle序列化后返回发送给客户端。我们的实例需要依赖 multiprocessing 进行通信。
 4. RPC 调用安全问题，因为黑客可以创建特定的消息，能够让任意函数通过pickle反序列化后被执行，所以**永远不要允许来自不信任或未认证的客户端的RPC**。特别是你绝对不要允许来自Internet的任意机器的访问， 这种只能在内部被使用，位于防火墙后面并且不要对外暴露。
+5. [Seif 有人设计的一套基于公钥加密的传递信息方法，取代http传递](https://www.crockford.com/seif.html) 难点可能在于如何分发证书。
+6. 
 
 ## 其他思想
 1. [正态分布](http://www.ruanyifeng.com/blog/2017/08/normal-distribution.html) 

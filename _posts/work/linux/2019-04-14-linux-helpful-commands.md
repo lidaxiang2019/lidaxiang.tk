@@ -40,3 +40,12 @@ kill -9 PID
 ```
 sudo du -h --max-depth=1
 ```
+
+6. grep遍历文件夹查找文本内容:
+`grep -r "要查找的内容" ./`
+
+7. [Mac中如何查看正在使用的端口及其进程ID](https://www.crifan.com/mac_check_view_using_port_and_process_id/) `netstat -anp tcp | grep LISTE # MAC`
+
+8. [使用netstat、lsof查看端口占用情况](http://lazybios.com/2015/03/netstat-notes/) `netstat -atunlp     OR   lsof:8000`
+
+9. 
