@@ -20,12 +20,10 @@ tags:
 ```
 git log --grep="XXX"
 ```
-
 2. `--graph` 是在左侧简单构造一个链接关系， `--oneline`则是简化commit内容为一行，`--decorate=short` 会把每个commit 关联的分支或者标签很有用
 ```
 git log --graph --oneline --decorate=short
 ```
-
 3. `git log --stat` 选项显示每次提交的文件增删数量
 4. `git shortlog` 按人分类，列出这个人的提交内容，只有一行。可以用于发布更新摘要声明。
 5. `--pretty=format:"<string>"` 用于格式化输出 log 内容，例如`%cn`、`%h` 和 `%cd` 这三种占位符会被分别替换为作者名字、缩略标识和提交日期。
@@ -34,6 +32,6 @@ git log --graph --oneline --decorate=short
 7. `git log --after="2014-7-1" --before="2014-7-4"`
 8. `git log --author="John"`   `git log --author="John\|Mary"`
 9. `--committer`
-10. `git log -- foo.py bar.py`  -- 告诉 git log 接下来的参数是文件路径而不是分支名。
-11. `git log master..feature`
+10.  `git log -- foo.py bar.py`  -- 告诉 git log 接下来的参数是文件路径而不是分支名。
+11.  `git log master..feature`
 12. `git log --no-merges`  & `git log --merges`
