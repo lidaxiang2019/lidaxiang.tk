@@ -2,6 +2,10 @@
 layout: article
 title:  "Introduction of Git pull and git fetch command"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_version_control_gitintro_git_pull_20190607
 categories:
 - VersionControl
 tags:

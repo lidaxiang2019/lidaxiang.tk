@@ -2,6 +2,10 @@
 layout: article
 title:  "Some userful library of Django"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_python_django_library_list_20181015
 categories:
 - Python
 tags:

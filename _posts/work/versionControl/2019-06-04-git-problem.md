@@ -2,6 +2,10 @@
 layout: article
 title:  "Solution of using Git commands"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_version_control_git_problems_20190604
 categories:
 - VersionControl
 tags:

@@ -2,6 +2,10 @@
 layout: article
 title:  "Django experience"
 data_source: site.posts.work
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_python_django_django_experience_20181212
 categories:
 - Python
 tags:

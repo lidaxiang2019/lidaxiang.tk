@@ -2,6 +2,10 @@
 layout: article
 title:  "Django REST framework"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_python_django_modules_django_rest_framwork_20190319
 categories:
 - Python
 tags:

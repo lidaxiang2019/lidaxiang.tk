@@ -2,6 +2,10 @@
 layout: article
 title:  "Learn Django by Demo"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_python_django_learn_django_20170331
 categories:
 - Python
 tags:

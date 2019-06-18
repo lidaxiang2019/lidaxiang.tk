@@ -2,6 +2,10 @@
 layout: article
 title:  "Django celery beat"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_python_django_modules_django_celery_beat_20190516
 categories:
 - Python
 tags:

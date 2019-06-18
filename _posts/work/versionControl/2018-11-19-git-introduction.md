@@ -2,6 +2,10 @@
 layout: article
 title:  "Git Introduction and Questions"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_version_control_git_introduction_20181119
 categories:
 - VersionControl
 tags:

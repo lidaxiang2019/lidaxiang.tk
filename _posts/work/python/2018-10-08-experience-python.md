@@ -2,6 +2,10 @@
 layout: article
 title:  "Python and Python3 experience"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_python_python_experience_20181008
 categories:
 - Python
 tags:

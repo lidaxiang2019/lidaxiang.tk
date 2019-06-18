@@ -2,6 +2,10 @@
 layout: article
 title:  "Introduction of git tag command"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_version_control_gitintro_git_tag_20190618
 categories:
 - VersionControl
 tags:

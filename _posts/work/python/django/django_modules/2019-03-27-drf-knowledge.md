@@ -2,6 +2,10 @@
 layout: article
 title:  Knowledge of Django REST framework
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_python_django_modules_drf_20190327
 categories:
 - Python
 tags:

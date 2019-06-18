@@ -2,6 +2,10 @@
 layout: article
 title:  "Introduction of git log and git show command"
 rootCate: "work"
+show_edit_on_github: false
+pageview: true
+comment: true
+key: work_version_control_gitintro_git_log_20190622
 categories:
 - VersionControl
 tags:
