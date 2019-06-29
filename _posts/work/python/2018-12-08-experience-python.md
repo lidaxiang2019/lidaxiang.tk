@@ -123,6 +123,29 @@ str = "单价: {0:3d}  金额{1:4d}  名字：{2:5s}"
  print(str.format(6, 12 "苹果"))
 ```
 
+## dict
+dict 的keys按照自定义的顺序排序 **使用OrderedDict**: 
+```
+monitorItems = OrderedDict()
+alist = ['Uptime','RPS', 'Resp_time','CPU','Mem','Disk','Network','Queue_length','Pool_size']
+for key in alist:
+    if row.has_key(key):
+        monitorItems[key] = row.get(key)
+```
+
+## asset
+Python3: EX1 : `assert 1>5, "chucuo"` EX2: `assert a>0,"a超出范围"`
+Python 2: `assert expression`
+[[Python]断言assert的用法](https://blog.csdn.net/humanking7/article/details/45950781)
+
+## callable 
+传 function类型的对象参数调用不同函数。
+```
+def add(a, b):
+    return a + b 
+callable(add)
+```
+
 ## 参考
 [Python 3 collections.defaultdict() 与 dict的使用和区别](https://blog.csdn.net/kyi_zhu123/article/details/80203118)
 

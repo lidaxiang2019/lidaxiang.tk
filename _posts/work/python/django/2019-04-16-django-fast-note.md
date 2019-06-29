@@ -68,22 +68,24 @@ Tom = Person.objects.get(id=1)
 27. [Django safedelete 防止被外键引用的数据被删](https://django-safedelete.readthedocs.io/en/latest/)
 28. [ManyToManyField 多对多关系](https://blog.csdn.net/bbwangj/article/details/79935375) `members = models.ManyToManyField(Person, through='Membership', through_fields=('group', 'person'))`
 29. [Django-haystack来实现搜索功能](https://blog.csdn.net/AC_hell/article/details/52875927) haystack是django的开源搜索框架，该框架支持Solr,Elasticsearch,Whoosh, *Xapian*搜索引擎，不用更改代码，直接切换引擎，减少代码量。
-30. **非常重要:** [django 使用 select_related 改lazy查询为一次性查出结果，由此提高查询效率避免多次query的思路](https://www.jianshu.com/p/be0392af0b64)，[Django 索引加快数据查询](https://www.jianshu.com/p/e6c7e244c980) select_related 执行了一个 sql join 查询。prefetch_related 执行一个单独的查找，它允许预先读取多对多和多对一的对象数据，这是 select_related 做不到的。另外 perfetch_related 也可以与通用外键和关系一起使用。设置索引方式:1. `db_index=True` 2. `unique_together` 3. `index_together`
-31. [mysql 索引使用原则](https://cloud.tencent.com/developer/article/1004912) mysql中普遍使用B+Tree做索引。原则： **1. 最左前缀匹配原则,，where子句中使用最频繁的一列放在最左边。 2.尽量选择区分度高的列作为索引 3. =和in可以乱序 4.索引列不能参与计算，保持列“干净” 5.尽量的扩展索引，不要新建索引** 
-32. [索引的坏处和额外时间、空间开销、数据变更还需要重新计算和维护](https://cloud.tencent.com/developer/article/1004912) 索引可以提高查询效率，但索引也有自己的不足之处。索引的额外开销：(1) 空间：索引需要占用空间;(2) 时间：查询索引需要时间；(3) 维护：索引须要维护（数据变更时）；
-33. [不建议使用索引的情况：(1) 数据量很小的表 (2) 空间紧张](https://cloud.tencent.com/developer/article/1004912)
-34. `[dict(q) for q in qs]` 把 **queryset** 转换成list
-35. [sort list of dictionaries by values in Python](https://www.geeksforgeeks.org/ways-sort-list-dictionaries-values-python-using-lambda-function/) `print sorted(lis, key = lambda i: i['age'],reverse=True) ` 
-36. [简单聚合 aggregate不单单可以求和，还可以求平均Avg，最大最小等等。](https://blog.csdn.net/AyoCross/article/details/68951413)`pubs = Publisher.objects.aggregate(num_books=Count('book'))`
-37. [annotate 查询各个 消息状态(未发送、已发送等等) 的消息数量](https://blog.csdn.net/AyoCross/article/details/68951413) ` msgS = MessageTab.objects.values_list('msg_status').annotate(Count('id'))`
-38. [select for update 不小心锁了全表带来的性能问题](http://ju.outofmemory.cn/entry/178798)
-39. `model._meta.get_fields()` 获取一个model所有字段名字。
-40. `exclude`
-41. `icotains`
+30. **非常重要:** [django 使用 select_related 改lazy查询为一次性查出结果，由此提高查询效率避免多次query的思路](https://www.jianshu.com/p/be0392af0b64)，[Django 索引加快数据查询](https://www.jianshu.com/p/e6c7e244c980) 对于一对一字段（OneToOneField）和外键字段（ForeignKey），可以使用select_related 来对QuerySet进行优化。select_related 执行了一个 sql join 查询。
+31. **非常重要**对于多对多字段（ManyToManyField）和一对多字段(例如外键) ，prefetch_related 执行一个单独的查找，它允许预先读取多对多和多对一的对象数据，这是 select_related 做不到的。另外 perfetch_related 也可以与通用外键和关系一起使用。设置索引方式:1. `db_index=True` 2. `unique_together` 3. `index_together`
+32. [mysql 索引使用原则](https://cloud.tencent.com/developer/article/1004912) mysql中普遍使用B+Tree做索引。原则： **1. 最左前缀匹配原则,，where子句中使用最频繁的一列放在最左边。 2.尽量选择区分度高的列作为索引 3. =和in可以乱序 4.索引列不能参与计算，保持列“干净” 5.尽量的扩展索引，不要新建索引** 
+33. [索引的坏处和额外时间、空间开销、数据变更还需要重新计算和维护](https://cloud.tencent.com/developer/article/1004912) 索引可以提高查询效率，但索引也有自己的不足之处。索引的额外开销：(1) 空间：索引需要占用空间;(2) 时间：查询索引需要时间；(3) 维护：索引须要维护（数据变更时）；
+34. [不建议使用索引的情况：(1) 数据量很小的表 (2) 空间紧张](https://cloud.tencent.com/developer/article/1004912)
+35. `[dict(q) for q in qs]` 把 **queryset** 转换成list
+36. [sort list of dictionaries by values in Python](https://www.geeksforgeeks.org/ways-sort-list-dictionaries-values-python-using-lambda-function/) `print sorted(lis, key = lambda i: i['age'],reverse=True) ` 
+37. **非常实用**aggregate 聚合 & annotate 汇总 函数在统计上非常实用。EX1: `pubs = Publisher.objects.aggregate(num_books=Count('book'))` [简单聚合 aggregate不单单可以求和，还可以求平均Avg，最大最小等等。](https://blog.csdn.net/AyoCross/article/details/68951413)   EX2: ` msgS = MessageTab.objects.values_list('msg_status').annotate(Count('id'))`  [annotate 查询各个 消息状态(未发送、已发送等等) 的消息数量](https://blog.csdn.net/AyoCross/article/details/68951413) 
+39. [select for update 不小心锁了全表带来的性能问题](http://ju.outofmemory.cn/entry/178798)
+40. `model._meta.get_fields()` 获取一个model所有字段名字。
+41. `exclude`
+42. `icotains`
 
 ## Django & DRF library
 1. [drf-problems Handles exception to return response with Problem Details model](https://pypi.org/project/drf-problems/)  这个库可以使得drf返回的错误信息非常详细，包括url、type、参数、错误原因。
 2. [drf-dynamic-fields](https://pypi.org/project/drf-dynamic-fields/) Dynamically return subset of Django REST Framework serializer fields
+3. `with cache.lock(f"redis_lock:XXX`):`
+4. django render 和 serializer 哪个先执行? 这个问题还是有点没理清。但目前的看法是在 `modelviewset` 的`viewmin` `apiview`的`as_view`  `view`方法中，先调用了`get_queryset` `get_serializer`获取了 `serializer` 里的额外定义字段，之后才去调用了render_class去渲染，最后在 `finalize_response` 的方法里完成对`response`的最后添加数据和装饰，最后返回给前端渲染后的文本。 参考资料: [DRF render](https://juejin.im/post/5a9e5ff46fb9a028b6170a7f) [DRF viewset 源码分析](https://blog.csdn.net/u013210620/article/details/79879611)
   
 
 ## Python
