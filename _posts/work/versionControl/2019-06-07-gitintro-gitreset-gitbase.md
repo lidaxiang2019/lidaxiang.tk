@@ -31,6 +31,12 @@ git reset HEAD
 ```
 git reset --hard
 ```
+4. 强制从远端拉取代码覆盖本地
+```
+git fetch --all  
+git reset --hard origin/master 
+git pull
+ ```
 
 ## Git rebase
 常用方法，push之前合并多个本地commit：
@@ -65,3 +71,4 @@ git rebase   [startpoint]   [endpoint]  --onto  [branchName]
 ## Source
 [git使用情景2：commit之后，想撤销commit](https://blog.csdn.net/w958796636/article/details/53611133)
 [Git rebase 介绍](https://www.jianshu.com/p/4a8f4af4e803)
+[git 强制pull](https://blog.csdn.net/Baple/article/details/49872765)

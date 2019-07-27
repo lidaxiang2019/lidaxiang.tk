@@ -110,7 +110,8 @@ Tom = Person.objects.get(id=1)
 19. [[Python标准库]heapq——堆排序算法](https://blog.csdn.net/dapeng0802/article/details/50389857)
 20. [基于线程通信的程序，想让它们实现发布/订阅模式的消息通信。](https://python3-cookbook.readthedocs.io/zh_CN/latest/c12/p11_implement_publish_subscribe_messaging.html) 一个交换机就是一个普通对象，负责维护一个活跃的订阅者集合，并为绑定、解绑和发送消息提供相应的方法。
 21. [self._” to variable declarations within class methods](https://stackoverflow.com/questions/30294383/python3-when-exactly-do-you-need-to-prepend-self-to-variable-declarations)class某个方法里如果有 `self._length_of_thing`，则表示这是个class 变量，可以被class其他方法访问。
-
+22. `getattr` 方法: `XX=getattr(FILE_NAME, VARIABLE_NAME, 默认值)` 可以获取例如setting文件里的某个全局变量值，如果这个`VARIABLE_NAME`全局不存在则XX会被赋予`默认值`。
+23. 
 
 ## 其他开发相关
 1. [Elastic APM - kibana](https://segmentfault.com/a/1190000014864630)  Opbeat被Elastic收购了，做成了Elastic APM。功能包括监控性能表现(每个路由、每次请求)，以及类似sentry的错误收集功能.，架构上Elastic APM和ES、Kibana还是相对独立的，集成也不难。

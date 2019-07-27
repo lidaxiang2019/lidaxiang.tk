@@ -32,6 +32,8 @@ tags:
 11. pandas
 12. django-socketio(maybe need you download from website)
 13. Celery : 是基于Python开发的一个分布式任务队列框架，支持使用任务队列的方式在分布的机器/进程/线程上执行任务调度。
+14. 处理时区、模糊时间范围、本月最后一个星期五、节假日计算可以用 [dateutil.relativedelta](https://python3-cookbook.readthedocs.io/zh_CN/latest/c03/p12_convert_days_to_seconds_and_others.html) 例子 : `print(datetime.date.today() - relativedelta(months=+1))`
+15. 
 
 ## software to help django
 1. redis
