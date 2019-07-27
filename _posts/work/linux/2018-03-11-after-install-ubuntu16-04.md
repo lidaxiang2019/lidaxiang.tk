@@ -2,8 +2,9 @@
 layout: article
 title:  "After Install Ubuntu 16-04"
 rootCate: "work"
-categories:
-- Linux
+pageview: true
+comment: true
+key: work_after_install_ubuntu_16_20180311
 tags:
 - work
 - Linux

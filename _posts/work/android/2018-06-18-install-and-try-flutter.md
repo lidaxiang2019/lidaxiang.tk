@@ -1,9 +1,10 @@
 ---
 layout: article
 title:  "Flutter 在 Ubuntu 18 下的安装和学习"
-categories:
-- android
 rootCate: "work"
+pageview: true
+comment: true
+key: work_install_and_try_flutter_20180618
 tags:
 - work
 - Android

@@ -2,8 +2,9 @@
 layout: article
 title:  "Quesions about MySQL/Mariadb modify password"
 rootCate: "work"
-categories:
-- Database
+pageview: true
+comment: true
+key: work_questions_about_mysql_modify_password_20171209
 tags:
 - work
 - Database

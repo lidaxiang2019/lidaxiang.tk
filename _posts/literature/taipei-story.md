@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "水墨台北故事"
-categories:
-- literature
+pageview: true
+comment: true
+key: literature_taipei_story
 tags:
 - literature
 ---

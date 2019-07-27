@@ -2,8 +2,9 @@
 layout: article
 title:  "Fedora remove nouse kernel version"
 rootCate: "work"
-categories:
-- Linux
+pageview: true
+comment: true
+key: work_fedora_questions_20160314
 tags:
 - work
 - Linux

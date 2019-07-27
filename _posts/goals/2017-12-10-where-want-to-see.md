@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "The city that I want to go"
-categories:
-- goals
+pageview: true
+comment: true
+key: goal_where_want_to_see_20171210
 tags:
 - goals
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "Those Simple But Import things in Ecnomic that I think(Updating)"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_those_simple_but_import_things_in_ecnomic_20170227
 tags:
 - book-notes
 ---

@@ -2,8 +2,9 @@
 layout: article
 title:  "Keras Introduction"
 rootCate: "work"
-categories:
-- DeepLearning
+pageview: true
+comment: true
+key: work_keras_introduction_20171117
 tags:
 - work
 - DeepLearning

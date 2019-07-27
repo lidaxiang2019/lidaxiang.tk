@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "南信院回忆 - 表白向日葵"
-categories:
-- literature
+pageview: true
+comment: true
+key: literature_njcit_memory_20170221
 tags:
 - literature
 ---

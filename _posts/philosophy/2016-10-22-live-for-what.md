@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "答心问"
-categories:
-- philosophy
+pageview: true
+comment: true
+key: philosophy_live_for_what_20161022
 tags:
 - philosophy
 ---

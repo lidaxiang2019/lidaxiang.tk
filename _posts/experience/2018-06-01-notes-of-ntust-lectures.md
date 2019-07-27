@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "台科讲座心得体会"
-categories:
-- experience
+pageview: true
+comment: true
+key: expreience_notes_of_ntust_lectures_20180601
 tags:
 - experience
 ---

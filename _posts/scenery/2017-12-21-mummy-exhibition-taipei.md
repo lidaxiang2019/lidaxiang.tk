@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "台北大英博物馆木乃伊展览"
-categories:
-- scenery
+pageview: true
+comment: true
+key: life_mummy_exhibition_taipei_20171221
 tags:
 - scenery
 ---

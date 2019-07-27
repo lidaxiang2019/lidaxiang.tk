@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "漫游随想"
-categories:
-- literature
+pageview: true
+comment: true
+key: literature_thoughts
 tags:
 - literature
 ---

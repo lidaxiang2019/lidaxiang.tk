@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "在台北生活小小建议"
-categories:
-- scenery
+pageview: true
+comment: true
+key: life_notice_in_taipei_20170802
 tags:
 - scenery
 ---

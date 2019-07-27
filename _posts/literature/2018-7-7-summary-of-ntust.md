@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "台科印象"
-categories:
-- literature
+pageview: true
+comment: true
+key: literature_summary_of_ntust_life_20180707
 tags:
 - literature
 ---

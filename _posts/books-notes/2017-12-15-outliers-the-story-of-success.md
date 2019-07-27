@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "异类：不一样的成功启示录"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_outliers_the_store_of_success_20171215
 tags:
 - book-notes
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "The Moon and Sixpence"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_the_moon_and_sixpence_20171214
 tags:
 - book-notes
 ---

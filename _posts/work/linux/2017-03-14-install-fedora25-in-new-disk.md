@@ -2,8 +2,9 @@
 layout: article
 title:  "Install Fedora25 in New Disk"
 rootCate: "work"
-categories:
-- Linux
+pageview: true
+comment: true
+key: work_insatll_fedora25_in_new_disk_20170314
 tags:
 - work
 - Linux

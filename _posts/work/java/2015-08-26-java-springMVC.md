@@ -2,8 +2,9 @@
 layout: article
 title:  "Java Spring MVC"
 rootCate: "work"
-categories:
-- Java
+pageview: true
+comment: true
+key: work_java_spring_mvc_20150826
 tags:
 - work
 - Java

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "维基经济学"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_wiki_ecnomic_book_notes_20170115
 tags:
 - book-notes
 ---

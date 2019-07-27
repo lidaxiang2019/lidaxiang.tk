@@ -2,8 +2,9 @@
 layout: article
 title:  "Java 泛型"
 rootCate: "work"
-categories:
-- Java
+pageview: true
+comment: true
+key: work_java_generics_20150824
 tags:
 - work
 - Java

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "我觉得好听的歌曲"
-categories:
-- others
+pageview: true
+comment: true
+key: others_my_like_songs_20170222
 tags:
 - others
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "台湾旅行推荐"
-categories:
-- scenery
+pageview: true
+comment: true
+key: life_advice_for_taiwan_scenery_20170320
 tags:
 - scenery
 ---

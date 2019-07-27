@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "关于职业选择"
-categories:
-- literature
+pageview: true
+comment: true
+key: about_job
 tags:
 - literature
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "神曲 The Divine Comedy (Italian: Divina Commedia)"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_the_divine_comedy_20180107
 tags:
 - book-notes
 ---

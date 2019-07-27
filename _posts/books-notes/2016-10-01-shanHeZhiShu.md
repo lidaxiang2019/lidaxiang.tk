@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "山河之书读书笔记"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_shanhe_zhi_shu_20161001
 tags:
 - book-notes
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "毕业生的以后"
-categories:
-- others
+pageview: true
+comment: true
+key: philosophy_senior_fear_for_future_20170401
 tags:
 - others
 ---

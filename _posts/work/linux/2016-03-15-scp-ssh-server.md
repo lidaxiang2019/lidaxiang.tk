@@ -2,8 +2,9 @@
 layout: article
 title:  "Linux 远程连接与 SCP 复制 Files"
 rootCate: "work"
-categories:
-- Linux
+pageview: true
+comment: true
+key: work_scp_ssh_server_20160315
 tags:
 - work
 - Linux

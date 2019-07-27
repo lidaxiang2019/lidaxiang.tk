@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "从年夜饭到平溪天灯"
-categories:
-- scenery
+pageview: true
+comment: true
+key: life_chinese_new_year_taipei_20170215
 tags:
 - scenery
 ---

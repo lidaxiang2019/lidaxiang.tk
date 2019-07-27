@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "2016年读电子书感想"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_read_books_notes_20170202
 tags:
 - book-notes
 ---

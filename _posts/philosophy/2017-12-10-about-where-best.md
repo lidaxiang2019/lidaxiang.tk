@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "哪里最好"
-categories:
-- philosophy
+pageview: true
+comment: true
+key: philosophy_about_where_best_20171210
 tags:
 - philosophy
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "台北印象"
-categories:
-- literature
+pageview: true
+comment: true
+key: literature_impression_taipei_20161022
 tags:
 - literature
 ---

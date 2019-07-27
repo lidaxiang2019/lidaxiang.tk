@@ -6,8 +6,6 @@ show_edit_on_github: false
 pageview: true
 comment: true
 key: experience_life_knowledeg_note_20190615
-categories:
-- life
 tags:
 - life
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "对努力是不是会收获的一点感触"
-categories:
-- others
+pageview: true
+comment: true
+key: others_points_work_and_get_20161211
 tags:
 - others
 ---

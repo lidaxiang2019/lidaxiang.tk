@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "俄罗斯诗选（台湾翻译）"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_russian_poetry_selected
 tags:
 - book-notes
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "我与网络小说"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_advice_for_internet_novel_20161222
 tags:
 - book-notes
 ---

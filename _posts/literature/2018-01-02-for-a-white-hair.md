@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "一根白发"
-categories:
-- literature
+pageview: true
+comment: true
+key: literature_for_a_white_hair_20180102
 tags:
 - literature
 ---

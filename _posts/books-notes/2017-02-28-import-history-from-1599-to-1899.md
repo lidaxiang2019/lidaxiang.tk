@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "Import History From 1500 To 1900"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_import_history_from_1500_to_1900_20170228
 tags:
 - book-notes
 ---

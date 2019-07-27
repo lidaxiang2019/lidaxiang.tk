@@ -6,8 +6,6 @@ show_edit_on_github: false
 pageview: true
 comment: true
 key: work_python_nginx_uwsgi_20181016
-categories:
-- Python
 tags:
 - work
 - Python3

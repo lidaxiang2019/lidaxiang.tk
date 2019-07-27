@@ -2,8 +2,9 @@
 layout: article
 title:  "Editor tools(Atom Sublime)"
 rootCate: "work"
-categories:
-- Tools
+pageview: true
+comment: true
+key: work_editor_tools_atom_sublime_20170222
 tags:
 - work
 - tools

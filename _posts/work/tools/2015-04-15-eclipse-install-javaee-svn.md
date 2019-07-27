@@ -2,8 +2,9 @@
 layout: article
 title:  "Use Eclipse Introduction"
 rootCate: "work"
-categories:
-- Tools
+pageview: true
+comment: true
+key: work_use_eclipse_introduction_20150415
 tags:
 - work
 - tools

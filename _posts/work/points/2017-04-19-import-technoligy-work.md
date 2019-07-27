@@ -2,8 +2,9 @@
 layout: article
 title:  "Import Technoligy In Develop"
 rootCate: "work"
-categories:
-- Points
+pageview: true
+comment: true
+key: work_import_technoligy_in_develop_20170419
 tags:
 - work
 - points

@@ -6,8 +6,6 @@ show_edit_on_github: false
 pageview: true
 comment: true
 key: work_arhitecture_user_permisstion_20181122
-categories:
-- architecture
 tags:
 - work
 - user_permisstion

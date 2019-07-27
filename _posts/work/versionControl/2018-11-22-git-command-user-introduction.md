@@ -6,8 +6,6 @@ show_edit_on_github: false
 pageview: true
 comment: true
 key: work_version_control_git_commands_20181122
-categories:
-- VersionControl
 tags:
 - work
 - tools

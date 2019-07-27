@@ -6,8 +6,6 @@ show_edit_on_github: false
 pageview: true
 comment: true
 key: work_python_django_django_experience_20181212
-categories:
-- Python
 tags:
 - work
 - Python3

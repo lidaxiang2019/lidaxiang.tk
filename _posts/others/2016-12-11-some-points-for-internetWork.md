@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "对个人要不要进入互联网行业的一些看法"
-categories:
-- others
+pageview: true
+comment: true
+key: others_some_points_for_internet_work_20161211
 tags:
 - others
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "2016~2017年碎片化阅读摘录"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_fragmented_reading_notes_20170202
 tags:
 - book-notes
 ---

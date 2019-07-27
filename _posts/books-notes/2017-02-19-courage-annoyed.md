@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "被讨厌的勇气读书笔记"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_courage_annoyed_20170219
 tags:
 - book-notes
 ---

@@ -2,8 +2,9 @@
 layout: article
 title:  "在Fedora25中安装和使用Laravel 框架"
 rootCate: "work"
-categories:
-- Web_BackEnd
+pageview: true
+comment: true
+key: work_install_and_use_laravel_in_fedora25_20170522
 tags:
 - work
 - web_backEnd  

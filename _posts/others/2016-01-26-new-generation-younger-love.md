@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "我知道的青年们的恋爱"
-categories:
-- others
+pageview: true
+comment: true
+key: others_new_generation_younger_love_20160126
 tags:
 - others
 ---

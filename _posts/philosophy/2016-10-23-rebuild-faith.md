@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "重建信仰"
-categories:
-- philosophy
+pageview: true
+comment: true
+key: philosophy_rebuild_faith_20161023
 tags:
 - philosophy
 ---

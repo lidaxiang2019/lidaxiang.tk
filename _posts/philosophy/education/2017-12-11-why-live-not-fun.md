@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "(转)北大学子：你们为什么活得这么无趣？！"
-categories:
-- philosophy
+pageview: true
+comment: true
+key: philosophy_education_why_live_not_fun_20171211
 tags:
 - philosophy
 ---

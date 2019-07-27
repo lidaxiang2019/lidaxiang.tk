@@ -2,8 +2,9 @@
 layout: article
 title:  "对未来计算机行业的一点看法(2017~2050)"
 rootCate: "work"
-categories:
-- Points
+pageview: true
+comment: true
+key: work_some_views_on_future_of_computer_industry_20170205
 tags:
 - work
 - points

@@ -2,8 +2,9 @@
 layout: article
 title:  "在Fedora25上安装Apache2.4 & PHP7 &Mariadb"
 rootCate: "work"
-categories:
-- Web_BackEnd
+pageview: true
+comment: true
+key: books_notes_install_apache_php_mariadb_in_fedora25_20170225
 tags:
 - work
 - web_backEnd

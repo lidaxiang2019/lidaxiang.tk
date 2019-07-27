@@ -1,9 +1,10 @@
 ---
 layout: article
 title:  "Android 学习和错误"
-categories:
-- android
 rootCate: "work"
+pageview: true
+comment: true
+key: work_android_questions_20150422
 tags:
 - work
 - Android

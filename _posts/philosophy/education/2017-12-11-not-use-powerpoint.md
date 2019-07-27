@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "(转)挽救學生智商，請停用 PowerPoint"
-categories:
-- philosophy
+pageview: true
+comment: true
+key: philosophy_education_not_use_powerpoint_20171211
 tags:
 - philosophy
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
-title:  "异城同地(更新中)"
-categories:
-- literature
+title:  "异城同地 高铁见闻"
+pageview: true
+comment: true
+key: literature_high_speed_rail_20180813
 tags:
 - literature
 ---

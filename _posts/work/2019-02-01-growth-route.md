@@ -2,8 +2,9 @@
 layout: article
 title:  "Django Growth Route 2019"
 data_source: site.posts.work
-categories:
-- Plan
+pageview: true
+comment: true
+key: work_django_growth_route_2019_20190201
 tags:
 - work
 - learn

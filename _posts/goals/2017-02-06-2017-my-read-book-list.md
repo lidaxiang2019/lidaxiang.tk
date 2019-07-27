@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "我的阅读清单"
-categories:
-- goals
+pageview: true
+comment: true
+key: goals_my_read_book_list_20170206
 tags:
 - goals
 ---

@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "我们为什么还要努力的活着"
-categories:
-- literature
+pageview: true
+comment: true
+key: philosophy_why_we_should_word_hard_20180419
 tags:
 - literature
 ---

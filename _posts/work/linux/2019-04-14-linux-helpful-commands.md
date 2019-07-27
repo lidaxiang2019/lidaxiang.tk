@@ -6,8 +6,6 @@ show_edit_on_github: false
 pageview: true
 comment: true
 key: work_linux_helpful_command_20190414
-categories:
-- Linux
 tags:
 - work
 - Linux

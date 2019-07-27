@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "我在台科这两年"
-categories:
-- literature
+pageview: true
+comment: true
+key: literature_two_years_in_ntust_20180910
 tags:
 - literature
 ---

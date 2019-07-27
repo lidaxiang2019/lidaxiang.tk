@@ -2,8 +2,9 @@
 layout: article
 title:  "Bash Text Color Config"
 rootCate: "work"
-categories:
-- Linux
+pageview: true
+comment: true
+key: work_bash_text_color_config_20171217
 tags:
 - work
 - Linux

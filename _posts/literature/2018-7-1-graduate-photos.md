@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "我在台科这两年"
-categories:
-- literature
+pageview: true
+comment: true
+key: literature_graduate_photos_20180701
 tags:
 - literature
 ---

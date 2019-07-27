@@ -6,8 +6,6 @@ show_edit_on_github: false
 pageview: true
 comment: true
 key: work_web_backEnd_high_performance_architecture_20181010
-categories:
-- Web_BackEnd
 tags:
 - work
 - web_backEnd  

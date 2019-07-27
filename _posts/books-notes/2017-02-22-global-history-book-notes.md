@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "全球通史 Updating"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_global_history_20170222
 tags:
 - book-notes
 ---

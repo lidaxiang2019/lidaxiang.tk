@@ -2,8 +2,9 @@
 layout: article
 title:  "计算机日常使用问题"
 rootCate: "work"
-categories:
-- Others
+pageview: true
+comment: true
+key: work_computer_questions_20151211
 tags:
 - work
 - Network

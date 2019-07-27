@@ -1,8 +1,9 @@
 ---
 layout: article
 title:  "Some My Understandings for Bitcoin And  Blockchain"
-categories:
-- book-notes
+pageview: true
+comment: true
+key: books_notes_some_my_understandings_for_bitcoin_and_blockchain_20170227
 tags:
 - book-notes
 ---
